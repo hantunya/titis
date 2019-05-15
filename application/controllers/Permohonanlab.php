@@ -34,7 +34,8 @@ $userId=$var['userId'];
      
     
         $this->global['pageTitle'] = 'Sighkhgkgh';
-         $data['fppc'] = $this->db->query("SELECT * FROM tbl_fppc Where userId =".$userId)->result_object();
+
+        // $data['fppc'] = $this->db->query("SELECT * FROM tbl_fppc Where userId =".$userId)->result_object();
    
          $this->loadViews("permohonan", $this->global,$data , NULL);
     }
