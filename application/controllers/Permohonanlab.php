@@ -17,8 +17,8 @@ class PermohonanLab extends BaseController
     public function __construct()
     {
         parent::__construct();
-      //  $this->load->model('Permohonan_model');
-       /// $this->load->model('user_model');
+       $this->load->model('Permohonan_model');
+        $this->load->model('user_model');
         $this->db2 = $this->load->database ('my_sqlsrv', TRUE );
         $this->isLoggedIn();   
     }
